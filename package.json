@@ -1,0 +1,19 @@
+{
+  "name": "restful-apis-with-nodejs-express-and-mysql",
+  "version": "1.0.0",
+  "description": "\"Rest Api With nodejs | express | Mysql | Jwt Authentication\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waqardev/RESTful-APIS-with-Nodejs-Express-and-MySql.git"
+  },
+  "author": "Waqardev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waqardev/RESTful-APIS-with-Nodejs-Express-and-MySql/issues"
+  },
+  "homepage": "https://github.com/Waqardev/RESTful-APIS-with-Nodejs-Express-and-MySql#readme"
+}
