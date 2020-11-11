@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Waqardev/RESTful-APIS-with-Nodejs-Express-and-MySql#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
