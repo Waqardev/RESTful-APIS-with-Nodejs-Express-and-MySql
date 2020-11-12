@@ -67,4 +67,16 @@ module.exports = {
       }
     );
   },
+  deleteUser: (data, callBack) => {
+    pool.query(
+      `delete from registration where id = ?`,
+      [data.id],
+      (error, results, fields) => {
+        if (error) {
+          return callBack(error);
+        }
+        return callBack(null, results);
+      }
+    );
+  },
 };

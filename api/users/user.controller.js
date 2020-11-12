@@ -1,4 +1,10 @@
-const { create, getUsers, getUserById, updateUser } = require("./user.service");
+const {
+  create,
+  getUsers,
+  getUserById,
+  updateUser,
+  deleteUser,
+} = require("./user.service");
 const { genSaltSync, hashSync } = require("bcrypt");
 
 module.exports = {
@@ -73,6 +79,25 @@ module.exports = {
       return res.status(200).json({
         success: 1,
         message: "updated successfully",
+      });
+    });
+  },
+  deleteUser: (req, res) => {
+    const data = req.body;
+    deleteUser(data, (err, results) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      if (!results) {
+        return res.json({
+          success: 0,
+          message: "Record not found",
+        });
+      }
+      return res.status(200).json({
+        success: 1,
+        message: "User deleted successfully",
       });
     });
   },
